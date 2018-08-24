@@ -215,3 +215,7 @@ REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'utils.exceptions.exception_handler',
 }
+
+
+"""使用自定义的user类"""
+AUTH_USER_MODEL = 'users.User'

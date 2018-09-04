@@ -219,3 +219,4 @@ REST_FRAMEWORK = {
 
 """使用自定义的user类"""
 AUTH_USER_MODEL = 'users.User'
+

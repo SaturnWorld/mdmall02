@@ -9,3 +9,45 @@ INFO 2018-08-24 17:12:14,399 basehttp 124 "GET /static/admin/css/login.css HTTP/
 INFO 2018-08-24 17:12:14,500 basehttp 124 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
 INFO 2018-08-24 17:12:14,586 basehttp 124 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
 INFO 2018-08-24 17:12:14,588 basehttp 124 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+ERROR 2018-09-04 22:32:19,627 exception 135 Internal Server Error: /users/usernames/xiaoming/count/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'username'
+ERROR 2018-09-04 22:32:19,753 basehttp 124 "GET /users/usernames/xiaoming/count/ HTTP/1.1" 500 18558
+ERROR 2018-09-04 22:32:59,827 exception 135 Internal Server Error: /users/usernames/xiaoming/count/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3_1.11_02/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'username'
+ERROR 2018-09-04 22:32:59,956 basehttp 124 "GET /users/usernames/xiaoming/count/ HTTP/1.1" 500 18558
+INFO 2018-09-04 22:34:21,773 basehttp 124 "GET /users/usernames/xiaoming/count/ HTTP/1.1" 200 23
+INFO 2018-09-04 22:35:48,600 basehttp 124 "GET /users/usernames/xiaoming/count/ HTTP/1.1" 200 33

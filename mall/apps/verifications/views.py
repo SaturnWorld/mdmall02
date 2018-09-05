@@ -59,4 +59,10 @@ class RegisterSmsCodeView(APIView):
         redis_conn.setex('sms_flag_%s' % mobile, constains.SMS_FLAG_EXPIRE, 1)
         print('sms_code:',sms_code)
 
+        #使用云通讯模块发送短信
+        # from celery_tasks.sms.tasks import send_sms_code
+        # 注意：异步任务必须使用delay调用
+        # delay的参数是和任务的参数是一致的
+        # send_sms_code.delay(mobile, sms_code)
+
         return Response({'message':'ok'})

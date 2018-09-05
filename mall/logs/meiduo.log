@@ -117,3 +117,73 @@ INFO 2018-09-05 19:40:13,044 basehttp 124 "GET /verifications/imagecodes/10ec6fd
 INFO 2018-09-05 19:40:14,281 basehttp 124 "GET /verifications/imagecodes/23a7f9ab-a27d-4336-b1f0-f239e3cb88ef/ HTTP/1.1" 200 3585
 INFO 2018-09-05 19:40:20,241 basehttp 124 "GET /users/phones/15013689309/count/ HTTP/1.1" 200 34
 INFO 2018-09-05 19:40:57,396 basehttp 124 "GET /verifications/smscodes/15013689309/?text=wabq&image_code_id=23a7f9ab-a27d-4336-b1f0-f239e3cb88ef HTTP/1.1" 200 16
+INFO 2018-09-05 20:37:59,663 basehttp 124 "GET /verifications/imagecodes/e10c5f74-da15-4503-809f-b08a10d9073c/ HTTP/1.1" 200 3161
+INFO 2018-09-05 20:38:03,829 basehttp 124 "GET /users/usernames/xiaoming/count/ HTTP/1.1" 200 33
+INFO 2018-09-05 20:38:12,055 basehttp 124 "GET /users/phones/15013689309/count/ HTTP/1.1" 200 34
+INFO 2018-09-05 20:38:18,505 basehttp 124 "GET /verifications/smscodes/15013689309/?text=divl&image_code_id=e10c5f74-da15-4503-809f-b08a10d9073c HTTP/1.1" 200 16
+INFO 2018-09-05 20:38:18,508 basehttp 124 "GET /users/phones/15013689309/count/ HTTP/1.1" 200 34
+INFO 2018-09-05 20:38:26,698 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+ERROR 2018-09-05 20:38:26,703 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 466, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 367, in initialize_request
+    parsers=self.get_parsers(),
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 256, in get_parsers
+    return [parser() for parser in self.parser_classes]
+TypeError: 'SerializerMetaclass' object is not iterable
+INFO 2018-09-05 20:38:26,708 basehttp 124 "GET /users/usernames/xiaoming/count/ HTTP/1.1" 200 33
+INFO 2018-09-05 20:38:26,717 basehttp 124 "GET /users/phones/15013689309/count/ HTTP/1.1" 200 34
+ERROR 2018-09-05 20:38:26,951 basehttp 124 "POST /users/ HTTP/1.1" 500 91149
+INFO 2018-09-05 20:46:07,205 basehttp 124 "GET /verifications/imagecodes/ca2f944a-bf3c-4d55-a7d5-acd8bd321393/ HTTP/1.1" 200 3098
+INFO 2018-09-05 20:46:11,322 basehttp 124 "GET /users/usernames/xiaoming/count/ HTTP/1.1" 200 33
+INFO 2018-09-05 20:46:22,159 basehttp 124 "GET /users/phones/15013689309/count/ HTTP/1.1" 200 34
+INFO 2018-09-05 20:46:22,239 basehttp 124 "GET /verifications/imagecodes/c900ce89-3721-4d00-a3f1-19a04f1dc459/ HTTP/1.1" 200 3346
+INFO 2018-09-05 20:46:22,447 basehttp 124 "GET /verifications/imagecodes/0effd1c0-645e-4837-a9cc-85abadf4f6da/ HTTP/1.1" 200 3019
+INFO 2018-09-05 20:46:24,176 basehttp 124 "GET /verifications/imagecodes/391a488e-70f2-41ea-b83e-702d12311773/ HTTP/1.1" 200 3095
+INFO 2018-09-05 20:46:25,336 basehttp 124 "GET /verifications/imagecodes/3256f1b8-8718-4de6-9248-35f3cd7f9e07/ HTTP/1.1" 200 3023
+INFO 2018-09-05 20:46:38,521 basehttp 124 "GET /users/phones/15013689309/count/ HTTP/1.1" 200 34
+INFO 2018-09-05 20:46:38,522 basehttp 124 "GET /verifications/smscodes/15013689309/?text=gymb&image_code_id=3256f1b8-8718-4de6-9248-35f3cd7f9e07 HTTP/1.1" 200 16
+INFO 2018-09-05 20:46:47,638 basehttp 124 "GET /users/usernames/xiaoming/count/ HTTP/1.1" 200 33
+ERROR 2018-09-05 20:46:47,647 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 466, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 367, in initialize_request
+    parsers=self.get_parsers(),
+  File "/home/python/.virtualenvs/django_py3_1.11/lib/python3.5/site-packages/rest_framework/views.py", line 256, in get_parsers
+    return [parser() for parser in self.parser_classes]
+TypeError: 'SerializerMetaclass' object is not iterable
+INFO 2018-09-05 20:46:47,653 basehttp 124 "GET /users/phones/15013689309/count/ HTTP/1.1" 200 34
+ERROR 2018-09-05 20:46:47,965 basehttp 124 "POST /users/ HTTP/1.1" 500 91149
+INFO 2018-09-05 20:52:43,505 basehttp 124 "GET /verifications/imagecodes/3800f8ba-0925-4dfa-a767-f74eb007d705/ HTTP/1.1" 200 3256
+INFO 2018-09-05 20:52:45,054 basehttp 124 "GET /users/usernames/xiaoming/count/ HTTP/1.1" 200 33
+INFO 2018-09-05 20:52:53,180 basehttp 124 "GET /users/phones/15013689309/count/ HTTP/1.1" 200 34
+INFO 2018-09-05 20:52:53,711 basehttp 124 "GET /verifications/imagecodes/01267434-cb55-43c3-8a43-4ad8884ef52d/ HTTP/1.1" 200 3254
+INFO 2018-09-05 20:52:55,851 basehttp 124 "GET /verifications/imagecodes/a3938710-e8de-4497-9d20-5726f74ab3b2/ HTTP/1.1" 200 3147
+INFO 2018-09-05 20:53:01,465 basehttp 124 "GET /verifications/smscodes/15013689309/?text=dayr&image_code_id=a3938710-e8de-4497-9d20-5726f74ab3b2 HTTP/1.1" 200 16
+INFO 2018-09-05 20:53:01,483 basehttp 124 "GET /users/phones/15013689309/count/ HTTP/1.1" 200 34
+INFO 2018-09-05 20:53:09,030 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-09-05 20:53:09,044 basehttp 124 "GET /users/phones/15013689309/count/ HTTP/1.1" 200 34
+INFO 2018-09-05 20:53:09,074 basehttp 124 "GET /users/usernames/xiaoming/count/ HTTP/1.1" 200 33
+INFO 2018-09-05 20:53:46,505 basehttp 124 "POST /users/ HTTP/1.1" 201 53

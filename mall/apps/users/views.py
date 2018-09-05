@@ -1,10 +1,12 @@
 from django.shortcuts import render
 
 # Create your views here.
+from rest_framework.generics import CreateAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from users.models import User
+from users.serializers import RegisterCreateSerializer
 
 
 class RegisterUsernameCountAPIView(APIView):
@@ -37,3 +39,12 @@ class RegisterPhoneCountAPIView(APIView):
             'mobile':mobile
         }
         return Response(context)
+
+#注册
+class RegisterCreateAPIView(CreateAPIView):
+    """
+    CreateAPIView
+    提供 post 方法
+    继承自： GenericAPIView、CreateModelMixin
+    """
+    serializer_class = RegisterCreateSerializer

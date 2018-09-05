@@ -56,3 +56,9 @@ WARNING 2018-09-04 22:55:19,359 basehttp 124 "GET /users/phones/13513793371/coun
 INFO 2018-09-04 22:56:34,719 basehttp 124 "GET /users/phones/13513793371/count/ HTTP/1.1" 200 34
 WARNING 2018-09-04 22:56:41,685 base 152 Not Found: /users/phones/1351393371/count/
 WARNING 2018-09-04 22:56:41,687 basehttp 124 "GET /users/phones/1351393371/count/ HTTP/1.1" 404 2462
+WARNING 2018-09-05 18:58:07,444 base 152 Not Found: /verifications/imagecodes/c0c0385a-1d8e-48f1-a00a-9431364acb16/
+WARNING 2018-09-05 18:58:07,468 basehttp 124 "GET /verifications/imagecodes/c0c0385a-1d8e-48f1-a00a-9431364acb16/ HTTP/1.1" 404 2421
+WARNING 2018-09-05 18:58:17,234 base 152 Not Found: /verifications/imagecodes/254cf5b2-cfc0-46e3-b541-6269a2d0d3f7/
+WARNING 2018-09-05 18:58:17,237 basehttp 124 "GET /verifications/imagecodes/254cf5b2-cfc0-46e3-b541-6269a2d0d3f7/ HTTP/1.1" 404 2421
+INFO 2018-09-05 19:03:14,290 basehttp 124 "GET /verifications/imagecodes/01f267d4-f27b-4892-8bd9-57ac80229cd3/ HTTP/1.1" 200 3002
+INFO 2018-09-05 19:03:18,610 basehttp 124 "GET /verifications/imagecodes/d9669ae2-a42f-46e4-b686-1b8c526e6d2e/ HTTP/1.1" 200 2802

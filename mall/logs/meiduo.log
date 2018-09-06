@@ -187,3 +187,8 @@ INFO 2018-09-05 20:53:09,030 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
 INFO 2018-09-05 20:53:09,044 basehttp 124 "GET /users/phones/15013689309/count/ HTTP/1.1" 200 34
 INFO 2018-09-05 20:53:09,074 basehttp 124 "GET /users/usernames/xiaoming/count/ HTTP/1.1" 200 33
 INFO 2018-09-05 20:53:46,505 basehttp 124 "POST /users/ HTTP/1.1" 201 53
+INFO 2018-09-06 10:40:34,539 basehttp 124 "OPTIONS /users/auths/ HTTP/1.1" 200 0
+INFO 2018-09-06 10:40:58,870 basehttp 124 "POST /users/auths/ HTTP/1.1" 200 211
+INFO 2018-09-06 10:41:05,683 basehttp 124 "OPTIONS /users/infos/ HTTP/1.1" 200 0
+WARNING 2018-09-06 10:41:05,770 base 152 Not Found: /users/infos/
+WARNING 2018-09-06 10:41:05,773 basehttp 124 "GET /users/infos/ HTTP/1.1" 404 2860

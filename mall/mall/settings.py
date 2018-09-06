@@ -221,11 +221,14 @@ REST_FRAMEWORK = {
 }
 
 
-"""JWT有效期"""
+"""JWT设置"""
 import datetime
 
 JWT_AUTH = {
+    #有效期
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+    #设置返回的JWT的数据,除了token加上了用户的id 和username
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'utils.users.jwt_response_payload_handler',
 }
 
 
@@ -239,3 +242,9 @@ CORS_ORIGIN_WHITELIST = (
     'www.meiduo.site:8080'
 )
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
+
+
+"""使用自定义的登陆认证"""
+AUTHENTICATION_BACKENDS = [
+   'utils.users.UsernameMobileAuthBackend',
+]

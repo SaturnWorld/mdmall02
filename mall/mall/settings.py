@@ -31,7 +31,7 @@ SECRET_KEY = '$ytf=6ou07(wk3k%vvursj%+$h0)do895l1qu87aa7g1yd0!ld'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','api.meiduo.site']
+ALLOWED_HOSTS = ['127.0.0.1', 'api.meiduo.site']
 
 # Application definition
 
@@ -137,7 +137,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
 """配置redis"""
 
 CACHES = {
@@ -166,8 +165,6 @@ CACHES = {
 }
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
-
-
 
 """日志配置"""
 
@@ -211,17 +208,29 @@ LOGGING = {
     }
 }
 
-
 """异常处理"""
 REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'utils.exceptions.exception_handler',
+    #  JWT
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+}
+
+
+"""JWT有效期"""
+import datetime
+
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
 }
 
 
 """使用自定义的user类"""
 AUTH_USER_MODEL = 'users.User'
-
 
 """CORS"""
 CORS_ORIGIN_WHITELIST = (
@@ -230,4 +239,3 @@ CORS_ORIGIN_WHITELIST = (
     'www.meiduo.site:8080'
 )
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
-
